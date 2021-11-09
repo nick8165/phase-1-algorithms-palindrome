@@ -1,5 +1,12 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let char = word.split('')
+  let char2 = []
+  for (let i = 0; i < char.length; i++) {
+    char2.unshift(char[i])
+  }
+  char = char.join('')
+  char2 = char2.join('')
+  return char === char2
 }
 
 /* 
